@@ -1,0 +1,206 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #181818;
+    color: #f8fbff;
+    font-size: 16px;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #e39520, rgba(255, 123, 0, 0.8)), url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 0 20px;
+    animation: fadeIn 1.5s ease;
+    
+
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.cta-button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #3360ff;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffa31a;
+    transform: scale(1.1);
+}
+
+/* Section Styling */
+.section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffa31a;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #222222;
+    color: #f8fbff;
+    padding: 40px 0;
+}
+
+.skills-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skill-card {
+    background-color: #333333;
+    border-radius: 15px;
+    padding: 25px;
+    width: 22%;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    color: #ffa31a;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffa31a;
+}
+
+.skill-card p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #f8fbff;
+}
+
+.skill-level {
+    margin-top: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #444444;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #3360ff;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.skill-card:hover .progress {
+    background-color: #ffa31a;
+}
+
+@media (max-width: 768px) {
+    .skill-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-card {
+        width: 100%;
+    }
+}
+
+
+/* Contact Section */
+#contact {
+    background-color: #222222;
+    color: #f8fbff;
+    padding: 40px 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.contact-item a {
+    color: #3360ff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.contact-item a:hover {
+    color: #ffa31a;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: #ffa31a;
+}

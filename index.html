@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numaan - Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Netflix+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Numaan Irshad</h1>
+            <p>Innovator in Electronics & Communication | Drone & EV Enthusiast 🚀🔋</p>
+            <a href="#about" class="cta-button">Explore My Work 🌟</a>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me 👨‍💻</h2>
+            <p>I'm a passionate tech innovator with a focus on drones, electric vehicles, and AI, currently pursuing a BE in Electronics and Communication Engineering at Sri Krishna College of Engineering, Coimbatore. I specialize in combining hardware and software to create innovative solutions to real-world problems.</p>
+            <p>With a background in embedded systems, IoT, robotics, and machine learning, I strive to build cutting-edge technology that can shape a better future.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-section">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Embedded Systems</h3>
+                    <p>Design & Development of Embedded Systems with real-time applications and IoT integration.</p>
+                    <div class="skill-level">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-drone"></i></div>
+                    <h3>Drone Technology</h3>
+                    <p>Flight Control Systems, Sensor Integration & Autonomous Navigation.</p>
+                    <div class="skill-level">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Electric Vehicles</h3>
+                    <p>Battery Management Systems, Charging Optimization, and Power Systems for EVs.</p>
+                    <div class="skill-level">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>AI Models for Automation, Robotics, and IoT Devices using ML algorithms.</p>
+                    <div class="skill-level">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects 🛠️</h2>
+            <div class="project-cards">
+                <div class="project-card">
+                    <h3>AI-Powered Drone Navigation 🤖</h3>
+                    <p>A machine learning-driven drone navigation system designed for autonomous obstacle avoidance and navigation. The system uses real-time sensor data to make dynamic decisions and adapt to the environment.</p>
+                    <button onclick="toggleProjectDetail('project1')">Learn More 📚</button>
+                    <div id="project1" class="project-detail">
+                        <p>The AI algorithm processes real-time camera and sensor data to detect obstacles and calculate optimal flight paths, enabling autonomous navigation in complex environments.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Smart EV Battery Management 🔋</h3>
+                    <p>A smart battery management system designed for electric vehicles, focusing on optimizing battery performance, health monitoring, and ensuring efficient charging and discharging cycles.</p>
+                    <button onclick="toggleProjectDetail('project2')">Learn More 📚</button>
+                    <div id="project2" class="project-detail">
+                        <p>The BMS monitors cell voltage, temperature, and current to optimize charging and discharging cycles while preventing overcharging and overheating, thus enhancing battery longevity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you’d like to collaborate, discuss opportunities, or just get in touch, feel free to reach out!</p>
+    
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <a href="mailto:numaania@gmail.com">numaania@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <p>+91 8610749040</p>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🔗</span>
+                    <a href="https://www.linkedin.com/in/numaan-irshad" target="_blank">LinkedIn: Numaan Irshad</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">💡</span>
+                    <a href="https://github.com/Numi05" target="_blank">GitHub: Numi05</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📸</span>
+                    <a href="https://www.instagram.com/its__numaan" target="_blank">Instagram: its__numaan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Numaan | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to toggle skill details
+        function toggleDetail(skillId) {
+            var element = document.getElementById(skillId);
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+
+        // Function to toggle project details
+        function toggleProjectDetail(projectId) {
+            var element = document.getElementById(projectId);
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
